@@ -6,7 +6,7 @@ const convert = () => {
 };
 
 (() => { 
-  fetch(`http://api.nbp.pl/api/exchangerates/tables/a/`)
+  fetch(`https://api.nbp.pl/api/exchangerates/tables/a/today`)
   .then((response) => response.json())
   .then((data) => {
     console.log( data[0].rates
